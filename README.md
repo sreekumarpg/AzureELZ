@@ -35,10 +35,10 @@ The Enterprise-Scale architecture provides prescriptive guidance coupled with Az
 |2   | Custom Policy Definitions   | Configures Custom Policy Definitions and Policy initiatives at the organization management group. |ARM Template | [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https%3A%2F%2Fraw.githubusercontent.com%2Fsreekumarpg%2FAzureELZ%2Fmain%2FARM%2Fpolicies.json)|
 |3   | Custom Role Definitions   | Configures Custom PRole Definitions at the organization management group. |ARM Template|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https%3A%2F%2Fraw.githubusercontent.com%2Fsreekumarpg%2FAzureELZ%2Fmain%2FARM%2FcustomRoleDefinitions.json)|
 |4   | Management Group Hierarchy  | Configures the management group hierarchy to support Azure Landing Zone reference implementation  |Terraform |<img width="50" alt="image" src="https://raw.githubusercontent.com/sreekumarpg/AzureELZ/main/ARM/Terraform.jpg"/>|
-|5   | Subscription Allocation  | Organize subscriptions into management groups to efficiently manage access, policies, and compliance for those subscriptions. |Terraform |
-|6   | Resource Group | Deploy Resource Group for holding related resources for an Azure solution.. |Terraform |
-|7   |  Logging | Configures a centrally managed Log Analytics Workspace and Automation Account in the Logging subscription.Link Automation account to Log Analytics Workspace  |Terraform|
+|5   | Subscription Allocation  | Organize subscriptions into management groups to efficiently manage access, policies, and compliance for those subscriptions. |Terraform |<img width="50" alt="image" src="https://raw.githubusercontent.com/sreekumarpg/AzureELZ/main/ARM/Terraform.jpg"/>|
+|6   | Resource Group | Deploy Resource Group for holding related resources for an Azure solution.. |Terraform |<img width="50" alt="image" src="https://raw.githubusercontent.com/sreekumarpg/AzureELZ/main/ARM/Terraform.jpg"/>|
+|7   |  Logging | Configures a centrally managed Log Analytics Workspace and Automation Account in the Logging subscription.Link Automation account to Log Analytics Workspace  |Terraform|<img width="50" alt="image" src="https://raw.githubusercontent.com/sreekumarpg/AzureELZ/main/ARM/Terraform.jpg"/>|
 |8   |  Managed Identity | Configures a Managed Identity in the Logging subscription for Azure Policy and Assign contributor role |Terraform|
-|9   | Landing Zone  |Creates Virtual Network and Subnets for deploying the Landing zone Workloads  |Terraform |
-|10  | Workloads  |Build Windows Server in Landing zone infrastructure  |Terraform |
+|9   | Landing Zone  |Creates Virtual Network and Subnets for deploying the Landing zone Workloads  |Terraform |<img width="50" alt="image" src="https://raw.githubusercontent.com/sreekumarpg/AzureELZ/main/ARM/Terraform.jpg"/>|
+|10  | Workloads  |Build Windows Server in Landing zone infrastructure  |Terraform |<img width="50" alt="image" src="https://raw.githubusercontent.com/sreekumarpg/AzureELZ/main/ARM/Terraform.jpg"/>|
 |11  | Azure Bastion  |Deploy Azure Bastion to connect to a virtual machine through Azure portal  |Manual |
