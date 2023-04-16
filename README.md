@@ -29,8 +29,8 @@ The Enterprise-Scale architecture provides prescriptive guidance coupled with Az
 ## Deployment Sequence
 
 
-| Order  |  Module | Description  | Link |
-| ------------ | ------------ | ------------ |------------ |
+| Order  |  Module | Description  
+| ------------ | ------------ | ------------ |
 |1   | Management Groups  | Configures the management group hierarchy to support Azure Landing Zone reference implementation 
 |2   |Custom Policy Definitions   | Configures Custom Policy Definitions at the organization management group. 
 | 3  |  Logging & Sentinel | Configures a centrally managed Log Analytics Workspace, Automation Account and Sentinel in the Logging subscription. 
