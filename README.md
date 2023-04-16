@@ -33,7 +33,7 @@ The Enterprise-Scale architecture provides prescriptive guidance coupled with Az
 | ------------ | ------------ | ------------ |------------ |------------ |
 |1   | Parent  Management Groups  | Configures parent management group which allow global policies and Azure role assignments to be applied at the directory level.  |Manual |
 |2   | Custom Policy Definitions   | Configures Custom Policy Definitions and Policy initiatives at the organization management group. |ARM Template | [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https%3A%2F%2Fraw.githubusercontent.com%2Fsreekumarpg%2FAzureELZ%2Fmain%2FARM%2Fpolicies.json)|
-|3   | Custom Role Definitions   | Configures Custom PRole Definitions at the organization management group. |ARM Template|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https%3A%2F%2Fraw.githubusercontent.com%2Fsreekumarpg%2FAzureELZ%2Fmain%2FARM%2FcustomRoleDefinitions.json)|
+|3   | Custom Role Definitions   | Configures Custom PRole Definitions at the organization management group. |ARM Template|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https%3A%2F%2Fraw.githubusercontent.com%2Fsreekumarpg%2FAzureELZ%2Fmain%2FARM%2FcustomRoleDefinitions.json)|<img src="https://raw.githubusercontent.com/sreekumarpg/AzureELZ/main/ARM/Terraform.jpg"/>|
 |4   | Management Group Hierarchy  | Configures the management group hierarchy to support Azure Landing Zone reference implementation  |Terraform |
 |5   | Subscription Allocation  | Organize subscriptions into management groups to efficiently manage access, policies, and compliance for those subscriptions. |Terraform |
 |6   | Resource Group | Deploy Resource Group for holding related resources for an Azure solution.. |Terraform |
