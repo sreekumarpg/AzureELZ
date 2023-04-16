@@ -29,9 +29,16 @@ The Enterprise-Scale architecture provides prescriptive guidance coupled with Az
 ## Deployment Sequence
 
 
-| Order  |  Module | Description  
-| ------------ | ------------ | ------------ |
-|1   | Management Groups  | Configures the management group hierarchy to support Azure Landing Zone reference implementation 
-|2   |Custom Policy Definitions   | Configures Custom Policy Definitions at the organization management group. 
-| 3  |  Logging & Sentinel | Configures a centrally managed Log Analytics Workspace, Automation Account and Sentinel in the Logging subscription. 
-|4   | Landing Zone  |Creates Hub networking infrastructure with Azure Firewall to support Hub & Spoke network topology in the Connectivity subscription.Creates Spoke networking infrastructure with Virtual Network Peering to support Hub & Spoke network topology. Spoke subscriptions are used for deploying construction sets and workloads.  
+| Order  |  Module | Description  | Method |
+| ------------ | ------------ | ------------ |------------ |
+|1   | Parent  Management Groups  | Configures parent management group which allow global policies and Azure role assignments to be applied at the directory level.  |Manual |
+|2   | Custom Policy Definitions   | Configures Custom Policy Definitions and Policy initiatives at the organization management group. |ARM Template <img width="25" alt="image" src="https://user-images.githubusercontent.com/22677711/165051860-c4c594fe-719e-4ba8-8987-fc574482d456.png">[Go to Deployment](https://github.com/sreekumarpg/ACME-Azure-ELZ/tree/main/Deployment/DeployManagementGroup) |
+|3   | Custom Role Definitions   | Configures Custom PRole Definitions at the organization management group. |ARM Template|
+|4   | Management Group Hierarchy  | Configures the management group hierarchy to support Azure Landing Zone reference implementation  |Terraform |
+|5   | Subscription Allocation  | Organize subscriptions into management groups to efficiently manage access, policies, and compliance for those subscriptions. |Terraform |
+|6   | Resource Group | Deploy Resource Group for holding related resources for an Azure solution.. |Terraform |
+|7   |  Logging | Configures a centrally managed Log Analytics Workspace and Automation Account in the Logging subscription.Link Automation account to Log Analytics Workspace  |Terraform|
+|8   |  Managed Identity | Configures a Managed Identity in the Logging subscription for Azure Policy and Assign contributor role |Terraform|
+|9   | Landing Zone  |Creates Virtual Network and Subnets for deploying the Landing zone Workloads  |Terraform |
+|10  | Workloads  |Build Windows Server in Landing zone infrastructure  |Terraform |
+|11  | Azure Bastion  |Deploy Azure Bastion to connect to a virtual machine through Azure portal  |Manual |
