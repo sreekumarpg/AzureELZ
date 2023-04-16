@@ -24,3 +24,14 @@ The Enterprise-Scale architecture provides prescriptive guidance coupled with Az
    # Deployment Flow?
 
 <img width="800" alt="image" src="https://user-images.githubusercontent.com/22677711/232288516-7ad12eec-942d-4a87-bd81-193fe64acd9d.png">
+
+
+## Deployment Sequence
+
+
+| Order  |  Module | Description  | Link |
+| ------------ | ------------ | ------------ |------------ |
+|1   | Management Groups  | Configures the management group hierarchy to support Azure Landing Zone reference implementation 
+|2   |Custom Policy Definitions   | Configures Custom Policy Definitions at the organization management group. 
+| 3  |  Logging & Sentinel | Configures a centrally managed Log Analytics Workspace, Automation Account and Sentinel in the Logging subscription. 
+|4   | Landing Zone  |Creates Hub networking infrastructure with Azure Firewall to support Hub & Spoke network topology in the Connectivity subscription.Creates Spoke networking infrastructure with Virtual Network Peering to support Hub & Spoke network topology. Spoke subscriptions are used for deploying construction sets and workloads.  
