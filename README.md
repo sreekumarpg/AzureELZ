@@ -23,4 +23,4 @@ The Enterprise-Scale architecture provides prescriptive guidance coupled with Az
    
    # Deployment Flow?
 
-<img width="540" alt="image" src="https://user-images.githubusercontent.com/22677711/232288516-7ad12eec-942d-4a87-bd81-193fe64acd9d.png">
+<img width="800" alt="image" src="https://user-images.githubusercontent.com/22677711/232288516-7ad12eec-942d-4a87-bd81-193fe64acd9d.png">
