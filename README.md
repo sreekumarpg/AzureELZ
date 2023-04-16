@@ -29,7 +29,7 @@ The Enterprise-Scale architecture provides prescriptive guidance coupled with Az
 ## Deployment Sequence
 
 
-| Order  |  Module | Description  | Method | Link |
+| Order  |  Module | Description  | Method |  |
 | ------------ | ------------ | ------------ |------------ |------------ |
 |1   | Parent  Management Groups  | Configures parent management group which allow global policies and Azure role assignments to be applied at the directory level.  |Manual |
 |2   | Custom Policy Definitions   | Configures Custom Policy Definitions and Policy initiatives at the organization management group. |ARM Template | [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https%3A%2F%2Fraw.githubusercontent.com%2Fsreekumarpg%2FAzureELZ%2Fmain%2FARM%2Fpolicies.json)|
