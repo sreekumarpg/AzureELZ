@@ -32,7 +32,8 @@ The Enterprise-Scale architecture provides prescriptive guidance coupled with Az
 | Order  |  Module | Description  | Method |
 | ------------ | ------------ | ------------ |------------ |
 |1   | Parent  Management Groups  | Configures parent management group which allow global policies and Azure role assignments to be applied at the directory level.  |Manual |
-|2   | Custom Policy Definitions   | Configures Custom Policy Definitions and Policy initiatives at the organization management group. |ARM Template <img width="25" alt="image" src="https://user-images.githubusercontent.com/22677711/165051860-c4c594fe-719e-4ba8-8987-fc574482d456.png">[Go to Deployment](https://github.com/sreekumarpg/ACME-Azure-ELZ/tree/main/Deployment/DeployManagementGroup) |
+|2   | Custom Policy Definitions   | Configures Custom Policy Definitions and Policy initiatives at the organization management group. |ARM Template 
+<img width="25" alt="image" src="https://user-images.githubusercontent.com/22677711/165051860-c4c594fe-719e-4ba8-8987-fc574482d456.png">[Go to Deployment](https://github.com/sreekumarpg/ACME-Azure-ELZ/tree/main/Deployment/DeployManagementGroup) |
 |3   | Custom Role Definitions   | Configures Custom PRole Definitions at the organization management group. |ARM Template|
 |4   | Management Group Hierarchy  | Configures the management group hierarchy to support Azure Landing Zone reference implementation  |Terraform |
 |5   | Subscription Allocation  | Organize subscriptions into management groups to efficiently manage access, policies, and compliance for those subscriptions. |Terraform |
